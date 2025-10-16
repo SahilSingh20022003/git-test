@@ -1,22 +1,23 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import AddTodo from './components/AddTodo'
-import AppName from './components/AppName'
-import TodoItem from './components/TodoItem'
-import TodoItems from './components/TodoItems'
 
 function App() {
-  const todoItems = [{ id: 1, todoText: 'Buy Milk', todoDate: '4-sept-2025' }, { id: 2, todoText: 'Go to College', todoDate: 'Everyday' },{id:3,todoText:'Exercise',todoDate:'Everyday'}]
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <center>
-        <AppName />
-        <AddTodo />
-        <TodoItems/>
-        {/* <TodoItem todoText={'Buy Milk'} todoDate={'4-sep-2024'}/> <br />
-        <TodoItem todoText={'Go to College'} todoDate={'EveryDay'}/> */}
-
-      </center>
+      <div>Placeholder Text</div>
+      <button type='button' class='btn btn-primary'>Primary</button>
+      <button type='button' class='btn btn-secondary'>Secondary</button>
+      <button type='button' class='btn btn-success'>Success</button>
+      <button type='button' class='btn btn-danger'>Danger</button>
+      <button type='button' class='btn btn-warning'>Warning</button>
+      <button type='button' class='btn btn-info'>Info</button>
+      <button type='button' class='btn btn-light'>Light</button>
+      <button type='button' class='btn btn-dark'>Dark</button>
+      <button type='button' class="btn btn-Link">Link</button>
     </>
   )
 }
